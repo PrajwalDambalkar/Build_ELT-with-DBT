@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: moving_avg
+    description: "Analytics model for moving average"
+    columns:
+      - name: moving_avg_5d
+        description: "Unique identifier for each stock price record"
+        data_tests:
+          - not_null

@@ -1,0 +1,1 @@
+SELECT * FROM user_db_boa.raw.stocks_data
