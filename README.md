@@ -7,16 +7,16 @@ Project Summary
 This project builds an end-to-end data analytics system to process, transform, and visualize historical stock price data, providing actionable insights through metrics like Moving Averages, RSI, and Price Momentum. The system automates the data pipeline from ingestion to visualization using tools like Airflow, dbt, Snowflake, and Tableau.
 Key Features
 
-Automated Data Ingestion: Fetches daily stock price data (e.g., META, AAPL) from the Alpha Vantage API.
+Automated Data Ingestion: Fetches daily stock price data (e.g., META, AAPL) from the YFinance API.
 Centralized Data Storage: Stores raw and transformed data in Snowflake for scalability and high performance.
 Data Transformation: Utilizes dbt to calculate meaningful metrics like Moving Averages and RSI.
 Pipeline Orchestration: Manages data ingestion and transformation workflows using Airflow DAGs.
-Visualization: Presents key insights and metrics via Tableau dashboards.
+Visualization: Presents key insights and metrics via Power BI dashboards.
 
 Components Breakdown
 
 Data Collection
-    Fetches historical stock data (last 90 days) using Alpha Vantage API.
+    Fetches historical stock data (last 90 days) using YFinance API.
     Includes fields: Symbol, Date, Open, High, Low, Close, Volume.
     Automated daily ingestion with Airflow.
 
@@ -33,7 +33,7 @@ Data Pipeline Automation
     Uses DAGs for scheduling and task orchestration.
 
 Data Visualization
-    Tableau visualizes derived metrics for trend analysis.
+    Power BI visualizes derived metrics for trend analysis.
     Provides interactive dashboards for informed decision-making.
 
 Technology Stack
